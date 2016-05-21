@@ -18,6 +18,14 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="167dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCrowsCounter"
+        android:text="Считаем ворон"
+        android:layout_above="@+id/buttonHello"
+        android:layout_alignRight="@+id/buttonHello"
+        android:layout_alignEnd="@+id/buttonHello" />
 
     <TextView
         android:layout_width="wrap_content"
