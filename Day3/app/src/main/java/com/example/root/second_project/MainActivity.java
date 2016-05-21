@@ -37,4 +37,12 @@ private int mCountCat = 0;
         });
     }
 
+    public void onClick(View view) {
+        TextView mInfoTextView1 = (TextView)findViewById(R.id.textView);
+        TextView mInfoTextView2 = (TextView)findViewById(R.id.textView2);
+        mInfoTextView1.setText("Начните заново считать ворон");
+        mInfoTextView2.setText("Начните заново считать кошек");
+        mCountCat = 0;
+        mCountCrows = 0;
+    }
 }
