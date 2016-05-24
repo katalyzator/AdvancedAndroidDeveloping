@@ -9,9 +9,27 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.root.menu.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Показать меню"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
         android:id="@+id/textView"
-        android:text="Hello World!" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A TextView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
