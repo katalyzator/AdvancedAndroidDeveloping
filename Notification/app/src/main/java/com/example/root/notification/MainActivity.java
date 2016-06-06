@@ -27,19 +27,18 @@ public class MainActivity extends AppCompatActivity {
         Context context = getApplicationContext();
 
         Intent notificationIntent = new Intent(context, MainActivity.class);
-        PendingIntent contentIntent = PendingIntent.getActivity(context,
+        PendingIntent pendingIntent = PendingIntent.getActivity(context,
                 0, notificationIntent,
                 PendingIntent.FLAG_CANCEL_CURRENT);
 
         Resources res = context.getResources();
         Notification.Builder builder = new Notification.Builder(context);
 
-        builder.setContentIntent(contentIntent)
+        builder.setContentIntent(pendingIntent)
                 .setSmallIcon(R.drawable.ic_launcher)
                 .setLargeIcon(BitmapFactory.decodeResource(res, R.drawable.launcher))
                 .setTicker(res.getString(R.string.warning))
                 .setWhen(System.currentTimeMillis())
-                .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
                 .setContentTitle("Посетите мой сайт")
                 .setContentText("http://www.facebook.com");
